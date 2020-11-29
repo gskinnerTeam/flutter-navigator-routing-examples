@@ -14,8 +14,8 @@ NavModel _navModel = NavModel();
 String _prevPath;
 void syncSystemPath(String value) {
   if (value != _prevPath) {
-    _prevPath = value;
     SystemNavigator.routeUpdated(routeName: value ?? "/", previousRouteName: _prevPath ?? "/");
+    _prevPath = value;
   }
 }
 
