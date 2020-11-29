@@ -45,7 +45,7 @@ class SimpleDeclarativeNav extends StatelessWidget {
     return MaterialApp(
       builder: (_, __) {
         return Scaffold(
-          // Use an AnimatedBuiler to rebuild when the NavModel changes
+          // Use an AnimatedBuilder to rebuild when the NavModel changes
           body: AnimatedBuilder(
             animation: _navModel,
             builder: (_, __) {
