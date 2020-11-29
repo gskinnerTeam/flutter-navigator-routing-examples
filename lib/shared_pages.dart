@@ -7,7 +7,7 @@ ButtonStyle get _btnStyle => ButtonStyle(
     );
 
 class CategoryListPage extends StatelessWidget {
-  const CategoryListPage(this.onCategorySelected, this.onLogoutPressed, {Key key}) : super(key: key);
+  const CategoryListPage(this.onCategorySelected, {Key key, this.onLogoutPressed}) : super(key: key);
   final VoidCallback onLogoutPressed;
   final void Function(String) onCategorySelected;
   @override
@@ -17,7 +17,8 @@ class CategoryListPage extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 40),
-            TextButton(onPressed: onLogoutPressed, child: Text("LOGOUT"), style: _btnStyle),
+            if (onLogoutPressed != null)
+              TextButton(onPressed: onLogoutPressed, child: Text("LOGOUT"), style: _btnStyle),
             SizedBox(height: 40),
             Text("Choose a category...", style: TextStyle(fontSize: 25)),
             Flexible(
