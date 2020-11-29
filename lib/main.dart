@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'examples/simple_imperative_nav.dart';
+import 'examples/declarative_nav_with_deeplink.dart';
 
 void main() {
-  runApp(SimpleImperativeNav());
-  //runApp(DeclarativeNavWithDeeplink());
+  //runApp(SimpleImperativeNav());
+  runApp(DeclarativeNavWithDeeplink());
   //runApp(SimpleDeclarativeNav());
 }
