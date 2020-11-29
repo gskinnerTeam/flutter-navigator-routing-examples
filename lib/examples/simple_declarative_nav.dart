@@ -3,7 +3,7 @@ import '../shared_pages.dart';
 
 // A very simple example of using the new Navigator.pages API with a declarative "state first" approach
 // Declares a simple NavModel and generates a PageStack based on the current state.
-// Is also implements a goBack() method, as that is required when using Navigator.pages.
+// Is also implements a popPage() method, as that is required when using Navigator.pages.
 
 // NOTE: This currently does not handle Android back button properly. Not sure how to catch it here without using an external package...
 
