@@ -11,8 +11,12 @@ import '../shared_pages.dart';
 NavModel _navModel = NavModel();
 
 // Utility method to report our current path back to the OS/Browser
+String _prevPath;
 void syncSystemPath(String value) {
-  SystemNavigator.routeInformationUpdated(location: value, state: null);
+  if (value != _prevPath) {
+    SystemNavigator.routeUpdated(routeName: value ?? "/", previousRouteName: _prevPath ?? "/");
+    _prevPath = value;
+  }
 }
 
 // Utility method to get the initial path from the Sytem/Browser, we can use this to deeplink
