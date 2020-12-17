@@ -4,8 +4,8 @@ import 'package:flutter/services.dart';
 
 import '../shared_pages.dart';
 
-/// This builds on [SimpleDeclarativeNav] example, and adds manual deep-linking and web-history support
-/// showing how you can still deeplink without using Router directly
+/// This builds on [SimpleDeclarativeNav] example, and adds manual deep-linking and web-location updates.
+/// Showing how you can still deeplink without using Router directly. 
 
 // Declare navModel as a package level variable for demo purposes (normally you would pass this around with GetIt, Provider etc
 NavModel _navModel = NavModel();
