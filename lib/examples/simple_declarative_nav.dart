@@ -5,7 +5,7 @@ import '../shared_pages.dart';
 // Declares a simple NavModel and generates a PageStack based on the current state.
 // Is also implements a popPage() method, as that is required when using Navigator.pages.
 
-// NOTE: This currently does not handle Android back button properly. Not sure how to catch it here without using an external package...
+// TODO: Add RootBackButtonDispatcher to catch Android back events
 
 // Declare navModel as a package level variable for demo purposes (normally you would pass this around with GetIt, Provider etc
 NavModel _navModel = NavModel();
